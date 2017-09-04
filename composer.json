@@ -1,5 +1,5 @@
 {
-    "name": "bryglen/yii2-apns-gcm",
+    "name": "sanmedina/yii2-apns-gcm",
     "description": "Yii 2 Apns and Gcm together",
     "type": "yii2-extension",
     "version": "1.0.5",
