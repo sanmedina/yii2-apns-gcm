@@ -142,7 +142,7 @@ class Apns extends AbstractApnsGcm
                 $message->setLocKey($text['loc-key']);
             }
             if (isset($text['loc-args'])) {
-                $message->setLocKey($text['loc-args']);
+                $message->setLocArgs($text['loc-args']);
             }
         } else {
             $message = new \ApnsPHP_Message($token);
@@ -199,7 +199,7 @@ class Apns extends AbstractApnsGcm
                 $message->setLocKey($text['loc-key']);
             }
             if (isset($text['loc-args'])) {
-                $message->setLocKey($text['loc-args']);
+                $message->setLocArgs($text['loc-args']);
             }
         } else {
             $message = new \ApnsPHP_Message();
