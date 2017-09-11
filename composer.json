@@ -11,8 +11,14 @@
             "email": "bryantan16@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sanmedina/ApnsPHP"
+        }
+    ],
     "require": {
-        "duccio/apns-php": "1.0.1",
+        "sanmedina/apns-php": "dev-alert-local-body",
         "php-gcm/php-gcm": "^1.1.1"
     },
     "autoload": {
