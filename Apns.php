@@ -138,6 +138,12 @@ class Apns extends AbstractApnsGcm
             if (isset($text['body'])) {
                 $message->setText($text['body']);
             }
+            if (isset($text['loc-key'])) {
+                $message->setLocKey($text['loc-key']);
+            }
+            if (isset($text['loc-args'])) {
+                $message->setLocArgs($text['loc-args']);
+            }
         } else {
             $message = new \ApnsPHP_Message($token);
             $message->setText($text);
@@ -188,6 +194,12 @@ class Apns extends AbstractApnsGcm
             }
             if (isset($text['body'])) {
                 $message->setText($text['body']);
+            }
+            if (isset($text['loc-key'])) {
+                $message->setLocKey($text['loc-key']);
+            }
+            if (isset($text['loc-args'])) {
+                $message->setLocArgs($text['loc-args']);
             }
         } else {
             $message = new \ApnsPHP_Message();
